@@ -60,7 +60,7 @@ def algorithm(draw, grid, start, end):
 					open_set_hash.add(neighbor)
 					neighbor.make_open()
 
-		draw()
+		#draw()
 
 		if current != start:
 			current.make_closed()
@@ -110,7 +110,7 @@ def get_clicked_pos(pos, rows, width):
 
 
 def main(win, width):
-	ROWS = 50
+	ROWS = 80
 	grid = make_grid(ROWS, width)
 
 	start = None
